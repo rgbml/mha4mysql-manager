@@ -72,7 +72,7 @@ use constant Change_Master_SQL =>
 use constant Change_Master_NoPass_SQL =>
 "CHANGE MASTER TO MASTER_HOST='%s', MASTER_PORT=%d, MASTER_USER='%s', MASTER_LOG_FILE='%s', MASTER_LOG_POS=%d";
 use constant Change_Master_Gtid_SQL =>
-"CHANGE MASTER TO MASTER_HOST='%s', MASTER_PORT=%d, MASTER_USER='%s', MASTER_PASSWORD='%s', MASTER_AUTO_POSITION=1";
+"CHANGE MASTER TO MASTER_HOST='%s', MASTER_PORT=%d, MASTER_USER='%s', MASTER_PASSWORD='%s', MASTER_PUBLIC_KEY_PATH='public.pem', MASTER_SSL=1, MASTER_AUTO_POSITION=1";
 use constant Change_Master_Gtid_NoPass_SQL =>
 "CHANGE MASTER TO MASTER_HOST='%s', MASTER_PORT=%d, MASTER_USER='%s', MASTER_AUTO_POSITION=1";
 use constant Reset_Slave_Master_Host_SQL => "RESET SLAVE /*!50516 ALL */";
